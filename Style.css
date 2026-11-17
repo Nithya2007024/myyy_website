@@ -1,0 +1,785 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6fc;
+    color: #33415c;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+
+/* ===== 2. HEADER AND NAVIGATION ===== */
+
+.top-header {
+    background: #172554;
+    color: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(23, 37, 84, 0.15);
+}
+
+.top-header h2 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.top-header nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-header nav a {
+    color: #e5eaff;
+    text-decoration: none;
+    padding: 9px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.top-header nav a:hover,
+.top-header nav a.active {
+    background: #ffffff;
+    color: #172554;
+}
+
+
+/* ===== 3. HOME / WELCOME SECTION ===== */
+
+.welcome-section {
+    min-height: 480px;
+    padding: 75px 8%;
+    background:
+        radial-gradient(circle at 85% 20%, #d9ddff, transparent 32%),
+        linear-gradient(120deg, #e9edff, #ffffff 60%, #e7eaff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.small-heading {
+    color: #6979b5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.welcome-content h1 {
+    font-size: 48px;
+    color: #172554;
+    font-weight: 750;
+    margin-bottom: 12px;
+}
+
+.welcome-content h1 span {
+    color: #6679c3;
+}
+
+.welcome-content h2 {
+    font-size: 22px;
+    color: #40558f;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.description {
+    color: #69758d;
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 680px;
+    margin: auto;
+}
+
+
+/* ===== 4. HOME PROFILE PHOTO ===== */
+
+.home-photo {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #ffffff;
+    margin: 20px auto;
+    box-shadow: 0 8px 25px rgba(36, 54, 110, 0.18);
+}
+
+.home-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ===== 5. BUTTONS ===== */
+
+.home-buttons {
+    margin-top: 28px;
+}
+
+.main-button,
+.outline-button {
+    display: inline-block;
+    padding: 12px 27px;
+    margin: 7px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.main-button {
+    background: #172554;
+    color: #ffffff;
+    border: 2px solid #172554;
+}
+
+.outline-button {
+    background: #ffffff;
+    color: #172554;
+    border: 2px solid #5269a9;
+}
+
+.main-button:hover {
+    background: #354b91;
+    border-color: #354b91;
+    transform: translateY(-3px);
+}
+
+.outline-button:hover {
+    background: #172554;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* ===== 6. INFORMATION SECTION ===== */
+
+.information-section {
+    padding: 70px 8%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.information-section > h2 {
+    color: #172554;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.section-description {
+    color: #7a849a;
+    font-size: 15px;
+    margin-bottom: 38px;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.info-card {
+    background: #f8f9ff;
+    border: 1px solid #e3e7f5;
+    border-radius: 12px;
+    padding: 32px 22px;
+    box-shadow: 0 5px 18px rgba(30, 48, 100, 0.06);
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(30, 48, 100, 0.12);
+    border-color: #b8c3ed;
+}
+
+.card-icon {
+    width: 55px;
+    height: 55px;
+    background: #172554;
+    color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 18px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.info-card h3 {
+    color: #263b72;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #69758d;
+    font-size: 14px;
+}
+
+
+/* ===== 7. QUOTE SECTION ===== */
+
+.quote-section {
+    background: linear-gradient(110deg, #172554, #354b91);
+    text-align: center;
+    padding: 48px 20px;
+}
+
+.quote-section h2 {
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.quote-section p {
+    color: #dce3ff;
+    font-size: 17px;
+    font-style: italic;
+}
+
+
+/* ===== 8. RESUME AND BIODATA CONTAINER ===== */
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 38px;
+    background: #ffffff;
+    border: 1px solid #e4e8f2;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(23, 37, 84, 0.08);
+}
+
+.container h1 {
+    text-align: center;
+    color: #172554;
+    font-size: 30px;
+    margin-bottom: 25px;
+    padding-bottom: 13px;
+    border-bottom: 2px solid #8192cb;
+}
+
+.container h2 {
+    color: #354b80;
+    font-size: 21px;
+    margin: 25px 0 12px;
+}
+
+.container h3 {
+    color: #263b72;
+    margin-bottom: 10px;
+}
+
+.container p,
+.container li {
+    color: #5e6980;
+    font-size: 15px;
+}
+
+.container ul {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.container li {
+    margin-bottom: 7px;
+}
+
+
+/* ===== 9. RESUME PROFILE ===== */
+
+.resume-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e0e5f3;
+}
+
+.resume-info {
+    flex: 1;
+}
+
+.resume-info h2 {
+    color: #172554;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.resume-info p {
+    margin: 5px 0;
+    color: #58657e;
+}
+
+.resume-photo img {
+    width: 135px;
+    height: 155px;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(23, 37, 84, 0.16);
+}
+
+
+/* ===== 10. TABLE DESIGN ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+th {
+    background: #172554;
+    color: #ffffff;
+    padding: 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #e2e6f0;
+    color: #536078;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background: #f3f5fc;
+}
+
+tr:hover {
+    background: #e9edff;
+}
+
+
+/* ===== 11. FOOTER ===== */
+
+.website-footer {
+    background: #172554;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.website-footer p {
+    font-size: 13px;
+    margin: 5px;
+    color: #dce3ff;
+}
+
+
+/* ===== 12. RESPONSIVE DESIGN ===== */
+
+@media (max-width: 900px) {
+
+    .info-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        width: 92%;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .top-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .top-header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .welcome-section {
+        padding: 60px 20px;
+    }
+
+    .welcome-content h1 {
+        font-size: 36px;
+    }
+
+    .welcome-content h2 {
+        font-size: 19px;
+    }
+
+    .information-section {
+        padding: 50px 20px;
+    }
+
+    .information-section > h2 {
+        font-size: 27px;
+    }
+
+    .info-container {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 94%;
+        padding: 22px;
+        margin: 25px auto;
+    }
+
+    .container h1 {
+        font-size: 25px;
+    }
+
+    .resume-profile {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .resume-photo img {
+        width: 125px;
+        height: 145px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 9px;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .top-header h2 {
+        font-size: 22px;
+    }
+
+    .top-header nav a {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .welcome-content h1 {
+        font-size: 30px;
+    }
+
+    .main-button,
+    .outline-button {
+        padding: 10px 18px;
+    }
+
+}
+
+/* =================================
+   COMPLETE NEW DARK PORTFOLIO LOOK
+================================= */
+
+body {
+    background: #10152f !important;
+    color: #f5f3ff;
+}
+
+/* HEADER */
+
+.top-header {
+    background: #10152f !important;
+    padding: 22px 8%;
+    border-bottom: 1px solid #34305c;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.25);
+}
+
+.top-header h2 {
+    color: #ffffff;
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+
+.top-header nav a {
+    color: #dcd9ff;
+    transition: 0.3s;
+}
+
+.top-header nav a:hover,
+.top-header nav a.active {
+    background: #7868dc !important;
+    color: white !important;
+}
+
+/* HOME BACKGROUND */
+
+.welcome-section {
+    min-height: 650px;
+    background:
+        radial-gradient(ellipse at 15% 20%, #39316d 0%, transparent 40%),
+        radial-gradient(ellipse at 85% 80%, #413477 0%, transparent 40%),
+        linear-gradient(135deg, #10152f, #1b1b42, #292052) !important;
+    color: white;
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* DECORATIVE GLOW */
+
+.welcome-section::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: rgba(130, 105, 255, 0.13);
+    top: 30px;
+    right: 8%;
+    filter: blur(5px);
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 1;
+}
+
+.small-heading {
+    color: #aaa0ff !important;
+    letter-spacing: 4px;
+}
+
+.welcome-content h1 {
+    color: #ffffff !important;
+    font-size: 52px;
+}
+
+.welcome-content h1 span {
+    color: #a99aff !important;
+}
+
+.welcome-content h2 {
+    color: #d2ccff !important;
+}
+
+.description {
+    color: #c3c4dc !important;
+}
+
+/* PROFILE PHOTO */
+
+.home-photo {
+    border: 5px solid #9283ed !important;
+    box-shadow: 0 0 35px rgba(137, 115, 255, 0.4);
+}
+
+/* BUTTONS */
+
+.main-button {
+    background: linear-gradient(120deg, #7564dc, #9b83f5) !important;
+    color: white !important;
+    border: none !important;
+    box-shadow: 0 5px 20px rgba(125, 102, 225, 0.3);
+}
+
+.outline-button {
+    background: transparent !important;
+    border: 2px solid #9c8af2 !important;
+    color: white !important;
+}
+
+.main-button:hover,
+.outline-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(140, 115, 255, 0.4);
+}
+
+/* INFORMATION SECTION */
+
+.information-section {
+    background: #171b39 !important;
+}
+
+.information-section > h2 {
+    color: white !important;
+}
+
+.section-description {
+    color: #b9b8d6 !important;
+}
+
+.info-container {
+    gap: 25px;
+}
+
+.info-card {
+    background: linear-gradient(145deg, #25234e, #1c2142) !important;
+    border: 1px solid #454071 !important;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    border-color: #9383ef !important;
+    box-shadow: 0 12px 30px rgba(113, 91, 215, 0.2);
+}
+
+.info-card h3 {
+    color: #e7e2ff !important;
+}
+
+.info-card p {
+    color: #c1c1dc !important;
+}
+
+.card-icon {
+    background: linear-gradient(135deg, #7564dc, #a08af3) !important;
+    color: white !important;
+}
+
+/* QUOTE SECTION */
+
+.quote-section {
+    background: linear-gradient(110deg, #302568, #6550b3) !important;
+}
+
+.quote-section h2,
+.quote-section p {
+    color: white !important;
+}
+
+/* RESUME AND BIODATA */
+
+.container {
+    background: #1b2040 !important;
+    border: 1px solid #454071 !important;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+}
+
+.container h1 {
+    color: white !important;
+    border-bottom-color: #9383ef !important;
+}
+
+.container h2,
+.container h3 {
+    color: #b9aaff !important;
+}
+
+.container p,
+.container li {
+    color: #d0d0e6 !important;
+}
+
+.resume-profile {
+    border-bottom-color: #454071 !important;
+}
+
+.resume-info h2,
+.resume-info p {
+    color: white !important;
+}
+
+.resume-photo img {
+    border-color: #9383ef !important;
+}
+
+/* TABLE */
+
+table {
+    background: #1b2040;
+}
+
+th {
+    background: #51418f !important;
+    color: white !important;
+}
+
+td {
+    color: #e2e0f6 !important;
+    border-color: #454071 !important;
+}
+
+tr:nth-child(even) {
+    background: #25264b !important;
+}
+
+tr:nth-child(odd) {
+    background: #1b2040 !important;
+}
+
+tr:hover {
+    background: #34305e !important;
+}
+
+/* FOOTER */
+
+.website-footer {
+    background: #0b1026 !important;
+    border-top: 1px solid #454071;
+}
+
+.website-footer p {
+    color: #d6d1f5 !important;
+}
+
+/* MOBILE */
+
+@media(max-width: 700px) {
+    .welcome-section {
+        min-height: 550px;
+        padding: 60px 18px;
+    }
+
+    .welcome-content h1 {
+        font-size: 36px;
+    }
+
+    .top-header nav {
+        gap: 5px;
+    }
+}
